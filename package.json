@@ -6,10 +6,10 @@
   "author": "Zachary Eggert <Eggert.Zachary@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "tsc",
-    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "dev": "vitest",
     "test": "vitest run",
-    "dev": "vitest watch",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "lint": "tsc",
     "ci": "yarn install --frozen-lockfile && yarn lint && yarn test && yarn build"
   },
   "devDependencies": {
