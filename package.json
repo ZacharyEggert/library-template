@@ -1,6 +1,6 @@
 {
   "name": "@zacharyeggert/library-template",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A template for ts library creation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
