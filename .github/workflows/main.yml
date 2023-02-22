@@ -14,6 +14,4 @@ jobs:
         with:
           node-version: 16.x
 
-      - uses: borales/actions-yarn@v4
-        with:
-          cmd: ci
+      - run: yarn ci

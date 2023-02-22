@@ -12,9 +12,11 @@
     "test": "vitest run",
     "build": "tsup src/index.ts --dts --format cjs,esm",
     "lint": "tsc",
-    "ci": "yarn install --frozen-lockfile && yarn lint && yarn test && yarn build"
+    "ci": "yarn install --frozen-lockfile && yarn lint && yarn test && yarn build",
+    "release": "yarn lint && yarn test && yarn build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@types/node": "^18.14.0",
     "prettier": "^2.8.4",
     "tsup": "^6.6.3",
