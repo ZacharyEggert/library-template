@@ -4,6 +4,7 @@
   "description": "A template for ts library creation",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
+  "private": false,
   "types": "dist/index.d.ts",
   "author": "Zachary Eggert <Eggert.Zachary@gmail.com>",
   "license": "MIT",
