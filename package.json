@@ -7,10 +7,14 @@
   "license": "MIT",
   "scripts": {
     "lint": "tsc",
-    "build": "tsup src/index.ts --dts --format cjs,esm"
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "test": "vitest run",
+    "dev": "vitest watch",
+    "ci": "npm run lint && npm run test && npm run build"
   },
   "devDependencies": {
     "@types/node": "^18.14.0",
+    "prettier": "^2.8.4",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
     "vitest": "^0.28.5"
