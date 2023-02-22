@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "A template for ts library creation",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "author": "Zachary Eggert <Eggert.Zachary@gmail.com>",
   "license": "MIT",
   "scripts": {
